@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+.dashboard {
+    min-height: 100vh;
+    padding: 40px;
+    background: #f4f6f9;
+}
+
+.dashboard-header {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.dashboard-header h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.logout-btn {
+    float: right;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    border: none;
+    background: #dc3545;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #bb2d3b;
+}
+
+.detail-form {
+    clear: both;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.detail-form input,
+.detail-form select,
+.detail-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: vertical;
+}
+
+.detail-form input:focus,
+.detail-form select:focus,
+.detail-form textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px rgba(79,70,229,.2);
+}
+
+.detail-form textarea {
+    min-height: 90px;
+}
+
+.detail-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.detail-form button:hover {
+    background: #4338ca;
+}
+
+.details-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.detail-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .25s;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-card h3 {
+    color: #4f46e5;
+    margin-bottom: 12px;
+}
+
+.detail-card p {
+    margin-bottom: 10px;
+    color: #444;
+    word-break: break-word;
+}
+
+.detail-card strong {
+    color: #222;
+}
+
+.detail-card button {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.detail-card button:first-of-type {
+    background: #ffc107;
+    color: black;
+}
+
+.detail-card button:first-of-type:hover {
+    background: #e0a800;
+}
+
+.detail-card button:last-of-type {
+    background: #dc3545;
+    color: white;
+}
+
+.detail-card button:last-of-type:hover {
+    background: #bb2d3b;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 20px;
+    }
+
+    .logout-btn {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .detail-card button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
